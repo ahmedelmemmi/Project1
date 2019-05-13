@@ -17,7 +17,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 /*body{
     height: 100vh;
@@ -33,9 +33,13 @@
     position: relative;
     background-color: #111;
 }*/ 
-.container{
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+.container-fluid{
     min-width: 700px;
-    min-height: 350px;
+    min-height: 350px; 
     border-radius: 20px;
     position: relative;
     transition: 1.5s ease-in-out;
@@ -46,6 +50,8 @@
     text-align: center;
     width: 100%;
     height: 100%;
+    margin-left: 0;
+    margin-right: 0;
     padding: 20px 50px;
     color: white;
     transform-style: preserve-3d;
@@ -75,7 +81,7 @@
     background-image: url(res/GOT.jpg);
     background-size: cover;
 }
-.container:hover{
+.container-fluid:hover{
     transform: rotateY(180deg);
 }
  .back h1{
@@ -115,20 +121,13 @@
      width: 70px;
      left: 46%;
      transform: rotateX(-50%);
-
  }
  
-
-
-
-
-
-
 </style>
 <body>
     <div class="leftside">
         <nav class="navbar navbar-expand-sm navbar-light justify-content-center">
-              <a class="navbar-brand"><img id="logo" src="res/logo.jpg.png"></a>
+              <a class="navbar-brand" href="index.html"><img id="logo" src="res/logo.jpg.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
               <span class="navbar-toggler-icon"></span> 
             </button> 
@@ -158,27 +157,26 @@
           </nav> 
     </div>
 
-    <div class="container">
-        <div class="front side">
-            <div class="content">
-                <h1>Contact Us</h1>
-            </div>
-        </div>
-
-        <div class="back side">
-            <div class="content">
-                <h1>Order your product</h1>
-                <form>
-                    <label>Your Name:</label>
-                    <input type="text" placeholder="Put your username here">
-                    <label>Your E-mail:</label>
-                    <input type="text" placeholder="Exemple@email.com">
-                    <label>Your Message:</label>
-                    <textarea placeholder="The subject"></textarea>
-                    <input type="submit" value="done">
-                </form>
-            </div>
-        </div>
+    <div class="container-fluid">
+                <div class="front side">
+                        <div class="content">
+                            <h1>Contact Us</h1>
+                        </div>
+                    </div>
+                <div class="back side">
+                        <div class="content">
+                            <h1>Order your product</h1>
+                            <form>
+                                <label>Your Name:</label>
+                                <input type="text" placeholder="Put your username here">
+                                <label>Your E-mail:</label>
+                                <input type="text" placeholder="Exemple@email.com">
+                                <label>Your Message:</label>
+                                <textarea placeholder="The subject"></textarea>
+                                <input type="submit" value="done">
+                            </form>
+                        </div>
+                    </div>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
